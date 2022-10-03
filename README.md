@@ -1,5 +1,8 @@
 # mutation-testing-stryker
 
+[![Node.js CI](https://github.com/JoranManoel/mutation-test/actions/workflows/node.js.yml/badge.svg)](https://github.com/JoranManoel/mutation-test/actions/workflows/node.js.yml)
+[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2FJoranManoel%2Fmutation-test%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/JoranManoel/mutation-test/main)
+
 ### Install
 Install with npm:
 

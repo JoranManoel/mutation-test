@@ -1,5 +1,7 @@
 # mutation-testing-stryker
 
+[![Node.js CI](https://github.com/JoranManoel/mutation-test/actions/workflows/node.js.yml/badge.svg)](https://github.com/JoranManoel/mutation-test/actions/workflows/node.js.yml)
+
 ### Install
 Install with npm:
 

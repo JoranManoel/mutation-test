@@ -9,19 +9,27 @@ Install Node and git before continue.
 
 ### Install
 Clone the project from GitHub:
-```git clone https://github.com/JoranManoel/mutation-test.git```
+~~~
+git clone https://github.com/JoranManoel/mutation-test.git
+~~~
 
 Install with npm:
-```npm install```
+~~~
+npm install
+~~~
 
 Install Sryker:
-```npm i -g stryker-cli```
+~~~
+npm i -g stryker-cli
+~~~
 
-```stryker init```
+~~~
+stryker init
+~~~
 
 Choose the following options in the questionnaire:
 
-~~~
+```
 ? Do you want to install Stryker locally?: 
 npm
 ? Are you using one of these frameworks? Then select a preset configuration. 
@@ -37,14 +45,14 @@ Note: Use spacebar for multiple selection or choose html and press enter
 javascript
 ? [optional] What kind transformations should be applied to your code?
 (Press to select, to toggle all, to invert selection)
-~~~
+```
 
 ### Config
 
 Add the source file to generate your mutants, in this case './index.js'. 
 Adding to ***stryker.conf.js*** file ==> mutate: ["./index.js"]
 
-~~~
+```
 module.exports = function(config) {
   config.set({
     mutate: ["./index.js"],
@@ -56,9 +64,11 @@ module.exports = function(config) {
     coverageAnalysis: "off"
   });
 };
-~~~
+```
 
 ### Let's kill some mutants
-```stryker run```
+~~~
+stryker run
+~~~
 
 This will generate mutants for against your mutate file (./index.js), and will run your tests in test.js and see if the mutants are killed. It will also provide a report using clear text reporter showing % of code covered. It also provides suggestions on which mutants need more code coverage.

@@ -1,0 +1,20 @@
+{
+  "name": "mutation-testing-stryker",
+  "version": "1.0.0",
+  "description": "An example to explain mutation testing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "author": "Priyanka Jagga",
+  "license": "ISC",
+  "dependencies": {
+    "istanbul": "^0.4.5",
+    "jest": "^24.8.0"
+  },
+  "devDependencies": {
+    "@stryker-mutator/core": "^6.2.2",
+    "@stryker-mutator/jest-runner": "^6.2.2"
+  }
+}

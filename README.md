@@ -87,4 +87,4 @@ Open unit test file (./test.js) make new tests and run angain and see if the mut
 ### Video 
 
 This is a link for a better understanding
-[clink here to watch the video](https://drive.google.com/file/d/1tvEk7weoDptfU95FFWEWlzeMtjtAXbCC/view?usp=sharing)
+[click here to watch the video](https://drive.google.com/file/d/1tvEk7weoDptfU95FFWEWlzeMtjtAXbCC/view?usp=sharing)

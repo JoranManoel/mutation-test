@@ -83,3 +83,8 @@ stryker run
 
 This will generate mutants for against your mutate file (./cnh.js), and will run your tests in test.js and see if the mutants are killed. It will also provide a report using clear text reporter showing percentage of code covered. It also provides suggestions on which mutants need more code coverage.
 Open unit test file (./test.js) make new tests and run angain and see if the mutants are killed.
+
+### Video 
+
+This is a link for a better understanding
+[clink here to watch the video](https://drive.google.com/file/d/1tvEk7weoDptfU95FFWEWlzeMtjtAXbCC/view?usp=sharing)

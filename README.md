@@ -3,9 +3,14 @@
 [![Node.js CI](https://github.com/JoranManoel/mutation-test/actions/workflows/node.js.yml/badge.svg)](https://github.com/JoranManoel/mutation-test/actions/workflows/node.js.yml)
 [![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2FJoranManoel%2Fmutation-test%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/JoranManoel/mutation-test/main)
 
+
+### Description
+This project verifies users older enough to get driver's licence and through unit test runs a mutation test from it. Testing the test !
+
 ### Requirements
 NodeJs and Git is required to run. 
 Install Node and git before continue.
+We're using jest test runner.
 
 ### Install
 Clone the project from GitHub:
@@ -49,13 +54,13 @@ javascript
 
 ### Config
 
-Add the source file to generate your mutants, in this case './index.js'. 
-Adding to ***stryker.conf.js*** file ==> mutate: ["./index.js"]
+Add the source file to generate your mutants, in this case './cnh.js'. 
+Adding to ***stryker.conf.js*** file ==> mutate: ["./cnh.js"]
 
 ```
 module.exports = function(config) {
   config.set({
-    mutate: ["./index.js"],
+    mutate: ["./cnh.js"],
     mutator: "javascript",
     packageManager: "npm",
     reporters: ["html", "clear-text", "progress"],
@@ -65,10 +70,16 @@ module.exports = function(config) {
   });
 };
 ```
-
 ### Let's kill some mutants
+
+Try run unit test. You will notice the test has run and passed.
+~~~
+npm run coverage
+~~~
+Now see if our unit test could be better
 ~~~
 stryker run
 ~~~
 
-This will generate mutants for against your mutate file (./index.js), and will run your tests in test.js and see if the mutants are killed. It will also provide a report using clear text reporter showing % of code covered. It also provides suggestions on which mutants need more code coverage.
+This will generate mutants for against your mutate file (./cnh.js), and will run your tests in test.js and see if the mutants are killed. It will also provide a report using clear text reporter showing percentage of code covered. It also provides suggestions on which mutants need more code coverage.
+Open unit test file (./test.js) make new tests and run angain and see if the mutants are killed.

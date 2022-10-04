@@ -4,7 +4,7 @@ const config = {
   _comment:
     "This config was generated using 'stryker init'. Please take a look at: https://stryker-mutator.io/docs/stryker-js/configuration/ for more information",
   
-  mutate: ["./index.js"],
+  mutate: ["./cnh.js"],
   packageManager: "npm",
   reporters: ["html", "clear-text", "progress", "dashboard"],
 
